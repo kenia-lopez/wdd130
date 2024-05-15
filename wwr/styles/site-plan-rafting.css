@@ -1,0 +1,64 @@
+@import url('https://fonts.google.com/specimen/Poppins?sort=popularity');
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root{
+    --primary-color: #E78F8E;
+    --secondary-color: #ACD8AA;
+    --accent1-color: #F48498;
+    --accent2-color: #F2CCC3;
+
+    --heading-font: 'Breiem Hand', serif;
+    --paragraph-font: 'Roboto', serif;
+
+    --nav-background-color: #FFFF;
+    --nav-link-color: #326273;
+    --nav-hover-link-color: #E39774;
+    --nav-hover-background-color: #FFFF;
+
+    body{
+        font-family: var(--paragraph-font);
+        max-width: 960px;
+        padding: 20px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+haeder{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
