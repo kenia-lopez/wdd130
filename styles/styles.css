@@ -1,5 +1,10 @@
+* {/*css rule for the universal selector aka wildcard*/
+    margin: 0;
+    padding: 0; /*(0) will ensure that all elements on the page will have no margin or padding, regardless of the browser defaults. This will make it easier for you to control the layout of the page.*/
+    box-sizing: border-box;/*this tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+}
 nav {
-    background-color: darkblue;
+    background-color: rgb(29, 29, 104);
     padding: 10px;
 }
 /*apply two style declarations.
@@ -39,12 +44,20 @@ Padding between the image and the border.
 A box shadow around the image border with zero offset and depth of 30px in gray. */
 
 p {
-    padding: 0px;
+    padding: 1px;
+    
 }
 /*Padding between the paragraph content and the border is set to 10 pixels.*/
 
 main {
-    max-width: 840px;
+    width: 840px;
+    height:  auto;
+    margin: 0.5rem;
+    border: 0px solid rga (0, 0, 0, 0.2); /*1*/
+    padding: 4rem;
+    background-color: #a1aee6;
+    color: #333;
+    text-align: left;
 }
 
 aside {
@@ -63,9 +76,11 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: 180px;
     height: auto;
-    border: 1px solid lightblue;
+    border: 2px solid rgb(226, 236, 85);
+    float: right;
+    
 }
 /*added a border to my profile img in the main pt of html*/
 
@@ -73,4 +88,24 @@ footer {
     margin-top: 15px;/*add a top margin to separate it from the main element content*/
     border-top: 1px solid #000;/*2️⃣add a top border to design additional distinction from the main content,*/
     text-align: center;
+}
+
+/* CLASS SELECTORS */
+
+.box{/*I forgot to add the period before 'box'*/
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000
+
+}
+
+aside h2 {/*moves NC text on top of aside image*/
+    position: absolute;
+    top: 530px;
+    right: 1090px;
+    font-style: italic;
+    font-size: larger;
+
 }
