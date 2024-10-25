@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Slab:wght@600&display=swap');
+:root {
+    --primary-color: #033058;
+    --secondary-color: #396CAB;
+    --accent1-color: #275C30;
+    --accent2-color: #F3BA26;
+    --base-color: #FFFFFF;
+    --heading-font: "Roboto Slab";
+    --text-font: "Raleway";
+
+    --headline-color-on-white: #033058; /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #033058; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --text-background-color: #F3BA26;
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: #396CAB;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #396CAB;
+
+}
+
+body {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    color: white;
+    padding: 10px 20px; 
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+nav {
+    margin-top: 10px;
+    display: center;
+    padding: 10px 20px}
+nav ul {
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */}
+nav ul li {
+    margin-right: 80px; /* Space between items */}
+nav a {
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+h1{
+    position: relative;
+    height: 60px;
+    margin: 35px;
+    font-size: 50px;
+    color: var(--accent1-color)    
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    
+}
+head{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+h2 {
+    text-align: center;}
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+
+}
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--primary-color);
+}
+header > h1,
+header > h2 {
+    color: var(--headline-color-on-color);
+}
+p {
+    font-family: var(--text-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2 {
+    background-color: var(--accent2-color);
+}
+.base {
+    background-color: var(--base-color);
+}
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+ }
+
+ footer .sociallinks img {
+    display: flex;
+    color: white;
+    padding: 10px 20px; 
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.sociallinks{
+    display: flex;
+    position: relative;
+
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h2 {
+font-size: 2.5em; /* Adjust size as needed */
+margin: 0; /* Remove default margin */
+}
+
+section{
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--accent2-color);
+}
+
+article{
+    position: absolute;
+    image-resolution: 50%;
+    /*The img inside the article floats to the right of the p paragraph.
+Consider styling the background-color and opacity of the article to fit the design and make sure it is readable.*/
+}
+
