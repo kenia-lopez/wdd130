@@ -24,25 +24,11 @@ Each anchor tag will have padding of 20px;*/
 
 h1 {
     color: darkblue;
+    padding: 1rem;
 }
 /*This CSS rule references the <h1> (heading 1) element as the selected element and applies the following declaration:
 
 The foreground, font color is set to darkblue. */
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-/*This CSS rule references all the <img> (image) elements as the selector and applies the following declarations:
-
-a set width with a height that will adjust dynamically to fit the image's aspect ratio.
-A border shortcut that names the width, type of border, and color of the border.
-Padding between the image and the border.
-A box shadow around the image border with zero offset and depth of 30px in gray. */
-
 p {
     padding: 1px;
     
@@ -50,39 +36,52 @@ p {
 /*Padding between the paragraph content and the border is set to 10 pixels.*/
 
 main {
-    width: 840px;
+    /* width: 840px;
     height:  auto;
     margin: 0.5rem;
     border: 0px solid rga (0, 0, 0, 0.2); /*1*/
-    padding: 4rem;
+    /* padding: 4rem;
     background-color: #a1aee6;
     color: #333;
-    text-align: left;
+    text-align: left; */
+    max-width: 640px;
+} 
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
+/*This CSS rule references all the <img> (image) elements as the selector and applies the following declarations:*/
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rga (0, 0, 0, 0.2); /*1*/
+    /* margin: 1rem; */
+    /* border: 1px solid rga (0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
-    color: #333;
+    color: #333; */
     text-align: center;
+    position: relative;
+}
+
+aside h2 {/*moves NC text on top of aside image*/
+    position: absolute;
+    bottom: 220px;
+    right: 90px;
+    font-style: italic;
+    font-size: larger;
+    color: black
 }
 
 aside img {
     width: 200px;
     height: auto;
 }
-
-main img {
-    width: 180px;
-    height: auto;
-    border: 2px solid rgb(226, 236, 85);
-    float: right;
-    
-}
-/*added a border to my profile img in the main pt of html*/
 
 footer {
     margin-top: 15px;/*add a top margin to separate it from the main element content*/
@@ -96,16 +95,11 @@ footer {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
-    background-color: #ddd;
+    background-color: #eee;
     color: #000
 
 }
 
-aside h2 {/*moves NC text on top of aside image*/
-    position: absolute;
-    top: 530px;
-    right: 1090px;
-    font-style: italic;
-    font-size: larger;
-
+.indent {
+    padding-left: 2rem
 }
