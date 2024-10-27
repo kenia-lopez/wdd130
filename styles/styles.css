@@ -5,7 +5,10 @@
 }
 nav {
     background-color: rgb(29, 29, 104);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*apply two style declarations.
 The background color will be the color "darkblue", which is a valid, named color.
@@ -14,7 +17,11 @@ Padding, or area between the content and border is set to 10 pixels for readabil
 nav a {
     color:white;
     display: block;
-    padding: 20px;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 /* This CSS rule selects all the <a> (anchor / link) elements in the HTML that are children of the <nav> element and applies the following declarations:
 
@@ -25,10 +32,9 @@ Each anchor tag will have padding of 20px;*/
 h1 {
     color: darkblue;
     padding: 1rem;
+    border-bottom: 2px black;
 }
-/*This CSS rule references the <h1> (heading 1) element as the selected element and applies the following declaration:
-
-The foreground, font color is set to darkblue. */
+/*This CSS rule references the <h1> (heading 1) element as the selected element and applies the following declaration: */
 p {
     padding: 1px;
     
@@ -102,4 +108,25 @@ footer {
 
 .indent {
     padding-left: 2rem
+}
+
+header, .grid, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside{
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
