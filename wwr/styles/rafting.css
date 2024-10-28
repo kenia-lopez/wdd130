@@ -21,7 +21,7 @@
 }
 
 body {
-    max-width: 1090px;
+    max-width: 3090px;
     margin: 0 auto;
     padding: 4em;
     font-size: 18px;
@@ -57,7 +57,7 @@ img {
     max-width: 300px;
 }
 h1{
-    position: relative;
+    position: absolute;
     height: 60px;
     margin: 35px;
     font-size: 50px;
@@ -155,13 +155,13 @@ nav {
 
 }
 
-.hero {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 .hero h2 {
-font-size: 2.5em; /* Adjust size as needed */
+font-size: 2em; /* Adjust size as needed */
 margin: 0; /* Remove default margin */
 }
 
@@ -175,7 +175,28 @@ section{
 article{
     position: absolute;
     image-resolution: 50%;
+    float: inline-start;
+    background-color: var(--nav-background-color) ;
+    padding: 20px;
+    border-radius: 50px;
     /*The img inside the article floats to the right of the p paragraph.
 Consider styling the background-color and opacity of the article to fit the design and make sure it is readable.*/
 }
 
+/* About us */
+.grid-header-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1em;
+    background-color: var(--primary-color);
+    border: solid .5rem var(--base-color);
+}
+
+.grid-header-container > .grid-header-container-links
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin: auto 24px auto auto;
+    align-items: center;
+}
