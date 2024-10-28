@@ -1,0 +1,61 @@
+* {/*css rule for the universal selector aka wildcard*/
+    margin: 0;
+    padding: 0; /*(0) will ensure that all elements on the page will have no margin or padding, regardless of the browser defaults. This will make it easier for you to control the layout of the page.*/
+    box-sizing: border-box;/*this tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5f3bff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #7328ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #93b6f7;
+    text-decoration-line: underline;
+}
