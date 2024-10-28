@@ -195,3 +195,17 @@ footer {
     width: 30px;
     height: auto;
 }
+
+
+.employee {
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 1px solid var(--base-color);
+    padding: 1px;
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
