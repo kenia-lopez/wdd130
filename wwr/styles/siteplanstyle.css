@@ -108,3 +108,29 @@ nav {
     text-align: center;
     font-size: 1.2em;
  }
+
+ 
+footer {
+    background-color: var(--accent1-color);
+    padding: 20px 0;
+    color: var(--accent2-color);
+}
+.grid-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sociallinks a {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+}
+
+.sociallinks img {
+    width: auto;
+    height: auto;
+}
