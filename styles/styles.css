@@ -29,6 +29,8 @@ The foreground or font color will be white.
 The display will change from the default of inline to block.
 Each anchor tag will have padding of 20px;*/
 
+
+
 h1 {
     color: darkblue;
     padding: 1rem;
